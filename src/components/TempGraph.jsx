@@ -80,7 +80,6 @@ function TempGraph({ wholeData, city }) {
         }
       } catch (error) {
         console.error("Error sending image:", error);
-        alert("Error sending email. Please try again.");
       }
     }
   };
