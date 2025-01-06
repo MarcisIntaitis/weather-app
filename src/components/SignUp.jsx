@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 function SignUp() {
   const [email, setEmail] = useState("");
+  const [city, setCity] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
 
@@ -15,7 +16,7 @@ function SignUp() {
           headers: {
             "Content-Type": "application/x-www-form-urlencoded",
           },
-          body: new URLSearchParams({ email, password }),
+          body: new URLSearchParams({ email, city, password }),
           credentials: "include", // If sending cookies or requiring authentication
         }
       );
@@ -39,6 +40,14 @@ function SignUp() {
         placeholder="Email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
+        required
+        className="w-full bg-gray-700 text-white border border-gray-600 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+      />
+      <input
+        type="text"
+        placeholder="City"
+        value={city}
+        onChange={(e) => setCity(e.target.value)}
         required
         className="w-full bg-gray-700 text-white border border-gray-600 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 focus:outline-none"
       />
