@@ -78,17 +78,6 @@ function App() {
         </div>
       </div>
 
-      <div dir="rtl">
-        <div className="absolute top-0 start-0 md:col-span-1 m-3">
-          <button
-            onClick={() => setIsSignUpModalOpen(true)}
-            className="text-sm bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg w-full"
-          >
-            Sign Up
-          </button>
-        </div>
-      </div>
-
       {/* Modal */}
       {isSignUpModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-75">
