@@ -2,7 +2,7 @@
 
 ### Made with React, ChartJS and PHP for the backend
 
-### Uses https://www.weatherapi.com/ for weather information thats updates each 15 min
+### Uses https://www.weatherapi.com/ for weather information that updates each 15 min
 
 ![image](https://github.com/user-attachments/assets/5209f75e-efc9-4c03-bdc6-abad60df36d6)
 
